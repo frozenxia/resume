@@ -8,7 +8,7 @@
 /*.bat
 /\!*
 .DS_Store
-*.pdf
+#*.pdf
 
 ############################################
 ## LATEX TEMPORARY FILES
@@ -41,5 +41,3 @@
 
 ############################################
 # do not upload secret infomation
-myresume.tex
-myresume.pdf
