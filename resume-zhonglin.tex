@@ -125,18 +125,20 @@
 
 \section{\faUsers\ 项目经历}
 
-\datedsubsection{\textbf{小米~互联网商业部~/~金融策略组}}{2019.02 -- 2019.10}
+\datedsubsection{\textbf{小米~互联网商业部~/~金融策略组}}{2018.09 -- 2019.10}
 %\role{Golang, Linux}{个人项目，和富帅糕合作开发}
 \begin{onehalfspacing}
-研发针对互联网金融用户的人群定向模型，提高激活率和注册率；为金融应用研发召回策略算法，根据不同广告位的联合回测结果,通过随机初始启发式搜索方法，在额定ROI下最优化平台收益,该人群定向模型和召回策略算法已经投入使用。
-% \begin{itemize}
-%   \item 实现了多维序列预测算法对销量和故障数据进行预测，与LSTM以及Prophet的预测结果相比，误差和方差更小;
-% \end{itemize}
+研发针对互联网金融用户的人群召回模型，提高激活率和注册率；为金融应用研发召回策略算法，根据不同广告位的联合回测结果,通过随机初始启发式搜索方法，在额定ROI下最优化平台收益,该人群定向模型和召回策略算法已经投入使用。
+\begin{itemize}
+  \item 实现了单机多线程C++版本的FM、PLM算法，用于召回模型训练。
+  \item 实现的召回模型已经通过内部评测投入线上使用,比原有的模型下载率和激活率平均提高5.7\%和3.1\%。
+  \item 实现的召回算法已经投入线上使用，比原有的召回策略指标平均提高14\%。
+\end{itemize}
 \end{onehalfspacing}
 
 % \vspace{-1.5ex}
 
-\datedsubsection{\textbf{小米~云平台~/~采风质量预警系统}}{2017.10 -- 2019.01}
+\datedsubsection{\textbf{小米~云平台~/~采风质量预警系统}}{2017.10 -- 2018.09}
 %\role{Golang, Linux}{个人项目，和富帅糕合作开发}
 \begin{onehalfspacing}
 以售后、客服以及销售数据为基础研发预警算法，对产品质量问题进行快速预警；利用爬虫获取的用户评论数据，建立产品满意度指数。
@@ -155,10 +157,10 @@
 
 
 % \vspace{-1.5ex}
-\datedsubsection{\textbf{小米~云平台~/~用户画像表维护 }}{2017.08 -- 2017.10}
+\datedsubsection{\textbf{小米~云平台~/~用户画像表 }}{2017.08 -- 2017.10}
 %\role{Golang， Linux}{个人项目，和富帅糕合作开发}
 \begin{onehalfspacing}
-维护公司用户画像宽表，梳理上下游数据链路，提高数据质量和可用性。经过优化之后的数据可用性从90\%提高到99.8\%，数据生成时间减少65\%。
+生成公司用户画像数据，梳理数据上下游链路，提高数据质量和可用性。经过优化之后的数据可用性从89\%提高到99.8\%，数据生成时间减少65\%。
 % \begin{itemize}
 %   \item Faas支持多种编程语言，包括python、java和js等。
 %   \item Faas使用消息队列实现组件解耦，以etcd作为分布式锁进行全局控制，利用预加载策略提高响应速度。
@@ -170,11 +172,11 @@
 \datedsubsection{\textbf{小米~云平台~/~Faas系统 (https://open.cloud.mi.com)}}{2017.03 -- 2017.08}
 %\role{Golang， Linux}{个人项目，和富帅糕合作开发}
 \begin{onehalfspacing}
-为小米开放云设计并实现了基于Kubernetes的Serverless框架Faas，该系统支撑了小爱同学的语音skill调用。
-\begin{itemize}
-  \item Faas支持多种编程语言，包括python、java和js等。
-  \item Faas使用消息队列实现组件解耦，以etcd作为分布式锁进行全局控制，利用预加载策略提高响应速度。
-\end{itemize}
+为小米开放云设计并实现了基于Kubernetes的Serverless框架Faas，该系统支撑了小爱同学的语音skill调用。Faas支持多种编程语言，采用了预加载等机制提高了冷启动的速度。
+% \begin{itemize}
+%   \item Faas支持多种编程语言，包括python、java和js等。
+%   \item Faas使用消息队列实现组件解耦，以etcd作为分布式锁进行全局控制，利用预加载策略提高响应速度。
+% \end{itemize}
 \end{onehalfspacing}
 
 % \vspace{-1.5ex}
@@ -183,10 +185,10 @@
 \datedsubsection{\textbf{小米~云平台~/~小米生态云 ({https://cloud.mi.com})} }{2015.7 -- 2017.03}
 % \role{实习}{经理: 高富帅}
 为小米生态云设计并实现了用户管理模块，应用自动扩容模块，RDS和Cache的Service broker模块以及计量与计费模块，并参与了生态云的资源定价设计。
-\begin{itemize}
-  \item 用户管理模块将用户组作为资源的唯一关联实体，与RBAC控制策略相结合，避免了用户变更带来的资源和权限管理问题。
-  \item 自动扩容模块为平台上的App提供了多种扩容方案，包括基于metric的扩容策略和基于trigger的扩容策略，提高了用户资源的使用效率。
-\end{itemize}
+% \begin{itemize}
+%   \item 用户管理模块将用户组作为资源的唯一关联实体，与RBAC控制策略相结合，避免了用户变更带来的资源和权限管理问题。
+%   \item 自动扩容模块为平台上的App提供了多种扩容方案，包括基于metric的扩容策略和基于trigger的扩容策略，提高了用户资源的使用效率。
+% \end{itemize}
 % \vspace{-1.5ex}
 
 
