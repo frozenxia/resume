@@ -97,7 +97,7 @@ class Auth(object):
         r = None
         try:
             if method == 'GET':
-                r = requests.get(url, headers=headers, cookies=self.cookies)
+                r = requests.get(url,   , cookies=self.cookies)
             elif method == 'POST':
                 r = requests.post(url, headers=headers, data=data, cookies=self.cookies)
             if r.status_code != 200:
